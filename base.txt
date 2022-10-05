@@ -3,11 +3,8 @@ USE ferreteria;
 CREATE TABLE vendedor(
 idvendedor INT UNSIGNED,
 Tel Char(10),
-NombreCompleto VARCHAR(10),
+Nombre VARCHAR(10),
 Sexo VARCHAR(10),
-ObjeVentas VARCHAR(10),
-FechaIngr VARCHAR(10),
-CodigoVend VARCHAR(10)
 PRIMARY KEY (idvendedor)
 );
 CREATE TABLE familiar(
@@ -35,8 +32,8 @@ idfactura INT UNSIGNED,
 Numero VARCHAR(10)
 );
 CREATE TABLE articulo(
-Codigo VARCHAR(10),
-Fabricante VARCHAR(10),
+idArticulo INT,
+Nombre VARCHAR(10),
 Precio Decimal,
 Descripcion VARCHAR(10)
 );
